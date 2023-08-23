@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/tanabu/static/css/main.a704733c.css",
+    "main.js": "/tanabu/static/js/main.10b40dc8.js",
+    "static/js/787.025ee80f.chunk.js": "/tanabu/static/js/787.025ee80f.chunk.js",
+    "static/media/Teams-6.jpg": "/tanabu/static/media/Teams-6.e6e6a966f8ce7cd27bcd.jpg",
+    "static/media/light logo.svg": "/tanabu/static/media/light logo.c96510501aa46431a228be47748c30ea.svg",
+    "static/media/logo.svg": "/tanabu/static/media/logo.9603bdc22bacd2557cc04616cd3292c1.svg",
+    "static/media/OpenSans-Bold.ttf": "/tanabu/static/media/OpenSans-Bold.043771c999cd4d47d9f3.ttf",
+    "static/media/OpenSans-Light.ttf": "/tanabu/static/media/OpenSans-Light.3d5923f94fc319b5652a.ttf",
+    "static/media/innovation.png": "/tanabu/static/media/innovation.be12517e3b717e88aa27.png",
+    "static/media/affordable.png": "/tanabu/static/media/affordable.8a9d1290aa77e79de6bb.png",
+    "static/media/Climate.png": "/tanabu/static/media/Climate.fdee83c678567d158458.png",
+    "static/media/Cities.png": "/tanabu/static/media/Cities.0b2d504231e3c3148556.png",
+    "index.html": "/tanabu/index.html",
+    "main.a704733c.css.map": "/tanabu/static/css/main.a704733c.css.map",
+    "main.10b40dc8.js.map": "/tanabu/static/js/main.10b40dc8.js.map",
+    "787.025ee80f.chunk.js.map": "/tanabu/static/js/787.025ee80f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a704733c.css",
+    "static/js/main.10b40dc8.js"
+  ]
+}
