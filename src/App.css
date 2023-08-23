@@ -1,0 +1,20 @@
+* {
+  background: #c4e5fd;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  background-color: #c4e5fd;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#foot {
+  width: 200px; /* set the width of the image */
+  height: auto; /* set the height to auto to maintain aspect ratio */
+}

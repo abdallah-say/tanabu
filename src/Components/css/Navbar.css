@@ -1,0 +1,109 @@
+.Nav {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#logo {
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+}
+
+#navtrans {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  margin-top: 0;
+}
+
+#navtrans a {
+  color: navy;
+  text-decoration: none;
+  font-family: "OpenSans";
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+
+#navtrans a:hover {
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+#navtrans ul {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+#navtrans li {
+  height: 40px;
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  background-color: #333f50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  margin-top: 0;
+}
+
+#navbar a {
+  color: #c4e5fd;
+  background-color: transparent;
+  text-decoration: none;
+  font-family: "OpenSans";
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+#navbar ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+#navbar li {
+  height: 40px;
+  background-color: #333f50;
+}
+
+@media screen and (max-width: 480px) {
+  #navtrans,
+  #navbar {
+    flex-direction: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  #navtrans li,
+  #navbar li {
+    height: auto;
+  }
+}

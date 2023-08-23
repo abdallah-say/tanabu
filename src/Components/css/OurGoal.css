@@ -1,0 +1,209 @@
+.container {
+  display: flex;
+}
+
+.left-box {
+  /* position: fixed; */
+  margin-left: 100px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 150%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-box img {
+  display: block;
+  width: 40%;
+  margin: 5%;
+  animation: float 3.2s ease-in-out infinite;
+  animation-delay: calc(0.1s * (1 + (2 * random())));
+}
+
+.left-box img:nth-child(1) {
+  animation-name: float1;
+  width: 320px;
+}
+
+.left-box img:nth-child(2) {
+  animation-name: float2;
+  width: 250px;
+}
+
+.left-box img:nth-child(3) {
+  animation-name: float3;
+  width: 250px;
+}
+
+.right-box p {
+  margin-top: 0.5em;
+  line-height: 1.2;
+  margin-left: 50%;
+  width: 100%;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(calc(-30% + 15px)) translateX(calc(-10% + 15px));
+  }
+  50% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(calc(-30% + 15px)) translateX(calc(-10% + 15px));
+  }
+}
+
+@keyframes float1 {
+  0% {
+    transform: translateY(calc(-20% + 15px)) translateX(calc(10% - 15px));
+  }
+  50% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(calc(-20% + 15px)) translateX(calc(10% - 15px));
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translateY(calc(-30% + 15px)) translateX(calc(-10% + 15px));
+  }
+  50% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(calc(-30% + 15px)) translateX(calc(-10% + 15px));
+  }
+}
+
+@keyframes float3 {
+  0% {
+    transform: translateY(calc(-30% + 15px)) translateX(calc(10% - 15px));
+  }
+  50% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(calc(-30% + 15px)) translateX(calc(10% - 15px));
+  }
+}
+
+#goal {
+  font-family: "OpenSans";
+  width: 50%;
+  font-size: 20px;
+  padding-left: 20px;
+  color: navy;
+}
+
+#goal h2 {
+  text-align: center;
+  font-family: "OpenSans-Bold";
+  font-weight: 400px;
+  color: navy;
+  font-size: 50px;
+  border-radius: 50px;
+  margin-left: 150px;
+  justify-content: left;
+  align-items: start;
+}
+
+#goal p {
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+
+  .left-box {
+    width: 100%;
+    margin: 0;
+  }
+
+  .left-box img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .right-box {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  #goal {
+    padding: 0;
+    margin: 0;
+  }
+
+  #goal h2 {
+    margin: 0;
+    padding-left: 0;
+    width: 55px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #goal p {
+    padding: 0;
+    margin: 0; /* add some margin to separate text and images */
+    font-size: 25px;
+    text-align: left;
+    align-items: start;
+    justify-content: start;
+    width: 400px;
+    height: auto;
+  }
+
+  .left-box {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .right-box {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* adjust the animation for the images */
+  .left-box img:nth-child(1) {
+    animation-name: float1;
+    width: 200px;
+    margin-top: 15px;
+  }
+
+  .left-box img:nth-child(2) {
+    animation-name: float2;
+    width: 150px;
+    margin-top: 100px; /* add some margin to separate images */
+  }
+
+  .left-box img:nth-child(3) {
+    animation-name: float3;
+    width: 150px;
+    margin-top: -10px; /* add some margin to separate images */
+  }
+
+  /* adjust the animation keyframes for the images */
+  @keyframes float1 {
+    0% {
+      transform: translateY(calc(-20% + 15px)) translateX(calc(10% - 15px));
+    }
+    50% {
+      transform: translateY(0) translateX(0);
+    }
+    100% {
+      transform: translateY(calc(-20% + 15px)) translateX(calc(10% - 15px));
+    }
+  }
+}
